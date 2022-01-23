@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-@MapperScan("com.education.springcloud")
+@MapperScan("com.education.springcloud.dao")
 public class PaymentApplication8001
 {
     public static void main( String[] args )

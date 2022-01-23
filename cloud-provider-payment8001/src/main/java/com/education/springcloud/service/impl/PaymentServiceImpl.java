@@ -20,6 +20,7 @@ public class PaymentServiceImpl implements PaymentService
 
 //    @Autowired spring提供
 //    @Resource jdk提供
+    @Resource
     private PaymentDao paymentDao;
 
     @Override

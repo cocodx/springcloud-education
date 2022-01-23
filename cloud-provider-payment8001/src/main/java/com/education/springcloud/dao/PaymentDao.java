@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  */
 //mybatis提供的，等价：@MapperScan
 @Component
-@Mapper
+//@Mapper
 //@MapperScan("com.education.springcloud.dao")
 public interface PaymentDao {
 

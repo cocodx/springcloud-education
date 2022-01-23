@@ -13,8 +13,9 @@ import org.springframework.web.bind.annotation.*;
  * @description
  * @date 24/1/2022 上午6:46
  */
-@RestController(value = "/payment")
 @Slf4j
+@RestController
+@RequestMapping(value = "/payment")
 public class PaymentController {
 
     @Autowired
@@ -34,6 +35,7 @@ public class PaymentController {
     @GetMapping(value = "/get/{id}")
     public CommonResult<Payment> getPaymentById(@PathVariable("id") Long id){
         Payment payment = paymentService.getPaymentById(id);
+        log.debug("payment:{}",payment);
         return new CommonResult(200,"插入数据库成功",payment);
     }
 

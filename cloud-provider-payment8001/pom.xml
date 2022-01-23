@@ -59,6 +59,12 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>com.education.springcloud</groupId>
+      <artifactId>cloud-api-commons</artifactId>
+      <version>${parent.version}</version>
+    </dependency>
   </dependencies>
 
 

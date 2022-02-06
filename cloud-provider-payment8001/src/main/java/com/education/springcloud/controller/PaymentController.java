@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author 正能量导师
  * @version 1.0
@@ -42,6 +44,16 @@ public class PaymentController {
         Payment payment = paymentService.getPaymentById(id);
         log.debug("payment:{}",payment);
         return new CommonResult(200,"查询成功",payment);
+    }
+
+    @GetMapping(value = "/feign/timeout")
+    public String paymentFeignTimeout(){
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
 

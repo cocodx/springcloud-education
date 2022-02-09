@@ -14,6 +14,7 @@
     <module>cloud-api-commons</module>
     <module>cloud-eureka-7001</module>
     <module>cloud-consumer-feign-order80</module>
+    <module>cloud-provider-hystrix-payment8001</module>
   </modules>
   <!--添加父工程pom-->
   <packaging>pom</packaging>

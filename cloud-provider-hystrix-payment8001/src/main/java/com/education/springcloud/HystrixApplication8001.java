@@ -12,7 +12,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient//声明当前微服务是注册中心
 @SpringBootApplication
 @MapperScan("com.education.springcloud.dao")
-class HystrixApplication8001
+public class HystrixApplication8001
 {
     public static void main( String[] args )
     {

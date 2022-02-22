@@ -15,6 +15,7 @@
     <module>cloud-eureka-7001</module>
     <module>cloud-consumer-feign-order80</module>
     <module>cloud-provider-hystrix-payment8001</module>
+    <module>cloud-consumer-feign-hystrix-order80</module>
   </modules>
   <!--添加父工程pom-->
   <packaging>pom</packaging>
@@ -29,7 +30,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
 
-    <junit.version>4.12</junit.version>
+    <junit.version>4.13.2</junit.version>
     <log4j.version>1.2.17</log4j.version>
     <lombok.version>1.16.18</lombok.version>
     <mysql.version>5.1.47</mysql.version>
@@ -92,11 +93,7 @@
         <artifactId>mybatis-spring-boot-starter</artifactId>
         <version>${mybatis.spring.boot.version}</version>
       </dependency>
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>${junit.version}</version>
-      </dependency>
+
       <dependency>
         <groupId>log4j</groupId>
         <artifactId>log4j</artifactId>
@@ -121,6 +118,7 @@
             <fork>true</fork>
             <addResources>true</addResources>
           </configuration>
+          <version>2.2.2.RELEASE</version>
         </plugin>
       </plugins>
     </pluginManagement>

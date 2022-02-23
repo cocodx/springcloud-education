@@ -19,3 +19,24 @@ Hystrix官宣，停更进维，使用Sentinel替换
 服务熔断：服务降级->进而熔断->恢复调用链路
 
 服务限流Flowlimit
+
+https://www.bilibili.com/video/BV1f341167hQ?p=21  
+
+后台  
+1、讲师管理
+2、课程分类管理
+3、课程管理
+4、统计分析
+
+前台  
+1、讲师信息列表、详情
+2、课程信息列表、详情
+3、注册、登录
+   第三方注册登录、微信
+4、视频播放
+5、三方支付 微信  
+
+springboot springcloud mybatis-plus  
+mysql，redis，maven，easyexcel，jwt，oauth2  
+vue、element-ui，axios，nodejs  
+阿里云OSS、VOD、短信、微信扫码登录、扫码支付

@@ -29,17 +29,17 @@ public class MpUsingApplicationTest {
     @Test
     public void addUser(){
         User user = new User();
-        user.setName("zhaoliu");
-        user.setAge(35);
+        user.setName("leisuo");
+        user.setAge(234);
         user.setEmail("2cevening@gmail.com");
         userMapper.insert(user);
     }
 
+    //先读后改
     @Test
     public void updateUser(){
-        User user = new User();
-        user.setId(1496533042804662275L);
-        user.setName("zhangsan1");
+        User user = userMapper.selectById(1496533042804662276L);
+        user.setName("zhangsan1111");
         user.setAge(25);
         user.setEmail("860721890@qq.com");
         userMapper.updateById(user);

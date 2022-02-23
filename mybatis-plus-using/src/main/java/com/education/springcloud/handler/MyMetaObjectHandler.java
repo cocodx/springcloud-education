@@ -18,6 +18,8 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     public void insertFill(MetaObject metaObject) {
         this.setFieldValByName("createTime",new Date(System.currentTimeMillis()),metaObject);
         this.setFieldValByName("updateTime",new Date(System.currentTimeMillis()),metaObject);
+        this.setFieldValByName("version",1,metaObject);
+
     }
 
     @Override

@@ -10,7 +10,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @description
  * @date 24/2/2022 上午12:49
  */
-@MapperScan(basePackages = {"com.education.springcloud.mapper"})
 @SpringBootApplication
 public class MpUsingApplication {
 

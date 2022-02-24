@@ -28,4 +28,8 @@ public class User {
     @Version//乐观锁注解
     @TableField(fill = FieldFill.INSERT)
     private Integer version;
+
+    @TableLogic
+    @TableField(fill = FieldFill.INSERT)
+    private Integer deleted;
 }
